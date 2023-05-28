@@ -1,20 +1,35 @@
-Curso de TypeScript: Evoluindo seu JavaScript
-Este repositório contém o material utilizado no curso de TypeScript: Evoluindo seu JavaScript, oferecido pela Alura.
+TypeScript Avançado
+Este repositório contém o código fonte e os exemplos utilizados no curso "TypeScript Avançado" oferecido pela Alura.
 
-Conteúdo programático
-O curso é dividido em 7 módulos, abordando os seguintes tópicos:
+Sobre o Curso
+O curso de TypeScript Avançado é destinado a desenvolvedores que já possuem conhecimentos básicos da linguagem TypeScript e desejam aprimorar suas habilidades em projetos mais complexos. Durante o curso, você irá aprender sobre:
 
-Introdução ao TypeScript
-Variáveis e Tipos
-Funções e Interfaces
-Classes e Enumerações
-Módulos e Namespaces
 Generics
 Decorators
+Mixins
+Namespaces
+Modules
+Type Guards
+Advanced Types
+Type Inference
+E muito mais!
+Ao final do curso, você estará apto a utilizar essas ferramentas para criar códigos mais legíveis, organizados e escaláveis utilizando a linguagem TypeScript.
 
-Além disso, durante o curso, os alunos desenvolvem um projeto completo, utilizando TypeScript e aplicando os conceitos aprendidos em cada aula.
+Como usar
+Para utilizar o código desse repositório, é necessário ter instalado o Node.js e o npm.
 
-Como utilizar este repositório
- É possível clonar o repositório para acessar todo o conteúdo.
+Após clonar o repositório, execute o seguinte comando na raiz do projeto:
 
-Para mais informações sobre este curso, acesse: https://cursos.alura.com.br/course/typescript-evoluindo-javascript
+npm install
+Esse comando irá instalar todas as dependências necessárias para executar os exemplos do curso.
+
+Os exemplos estão organizados em pastas com os nomes dos módulos correspondentes. Para executar um exemplo específico, basta entrar na pasta correspondente e executar o comando:
+
+npm start
+Esse comando irá compilar o arquivo TypeScript e executar o resultado.
+
+Contribuindo
+Contribuições são sempre bem-vindas! Se você encontrou algum problema ou tem alguma sugestão de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+Licença
+Esse projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
