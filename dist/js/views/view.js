@@ -1,9 +1,22 @@
 export class View {
-    constructor(selector) {
-        this.element = document.querySelector(selector);
+    constructor(selector, escapar) {
+        this.escapar = false;
+        const elemento = document.querySelector(selector);
+        if (elemento) {
+            this.element = elemento;
+        }
+        else {
+            throw new Error(`Selecotr ${selector} não existe no DOM, verifique.`);
+        }
+        if (escapar) {
+            this.escapar = escapar;
+        }
     }
     updated(model) {
-        const template = this.template(model);
+        let template = this.template(model);
+        if (this.escapar) {
+            template = template.replace(/<script>[\s\S]*?<\/script>/, '');
+        }
         this.element.innerHTML = template;
     }
 }

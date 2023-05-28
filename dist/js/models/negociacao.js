@@ -5,11 +5,17 @@ export class Negociacao {
         this.valor = valor;
     }
     get data() {
-        //protecção para que não possamos alterar o valor do atributo da classe
         const data = new Date(this._data.getTime());
         return data;
     }
     get volume() {
         return this.quantidade * this.valor;
+    }
+    static criaDe(dataString, quantidadeString, valorString) {
+        const exp = /-/g;
+        const date = new Date(dataString.replace(exp, ","));
+        const quantidade = parseInt(quantidadeString);
+        const valor = parseFloat(valorString);
+        return new Negociacao(date, quantidade, valor);
     }
 }
